@@ -7,7 +7,7 @@ namespace CaoLendario.Models
 {
     interface IInteresseRepositorio
     {
-        IQueryable<Interesse> Interesses { get; }
+        IQueryable<Interesse> Interesses { get; set; }
 
         public void Create(Interesse interesse);
         public Interesse ObterInteresse(int id);

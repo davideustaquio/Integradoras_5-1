@@ -31,6 +31,9 @@ namespace CaoLendario
             services.AddTransient<IAnimalRepositorio, EFAnimalRepositorio>();
             services.AddTransient<IProcedimentosPosAdocaoRepositorio, EFProcedimentosPosAdocaoRepositorio>();
             services.AddTransient<IProcedimentosPreAdocaoRepositorio, EFProcedimentosPreAdocaoRepositorio>();
+
+            services.AddTransient<IInteresseRepositorio, EFInteresseRepositorio>();
+
             services.AddMvc();                        
         }
 
