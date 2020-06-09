@@ -8,9 +8,11 @@ namespace CaoLendario.Models
 
         public class Interesse
         {
+            private int interesseID;
             private DateTime data;
             private Boolean adotado;
 
+            public int InteresseID { get; set; }
             public DateTime Data { get; set; }
             public Boolean Adotado { get; set; }
 
