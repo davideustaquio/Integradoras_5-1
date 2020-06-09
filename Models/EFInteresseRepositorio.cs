@@ -2,11 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 using Microsoft.EntityFrameworkCore;
 
 namespace CaoLendario.Models
 {
     public class EFInteresseRepositorio:IInteresseRepositorio
+=======
+
+namespace CaoLendario.Models
+{
+    public class EFInteresseRepositorio
+>>>>>>> 348aaf1f31a26135e5f69a30113ea44453141028
     {
         public ApplicationDbContext context;
 
@@ -14,11 +21,16 @@ namespace CaoLendario.Models
         {
             context = ctx;
         }
+<<<<<<< HEAD
         public IQueryable<Interesse> Interesses => context.Interesse
         .Include(a => a.Adotante);
 
         
 
+=======
+        public IQueryable<Interesse> Interesse => context.Interesse
+        .Include(a => a.Adotante);
+>>>>>>> 348aaf1f31a26135e5f69a30113ea44453141028
         public void Create(Interesse interesse)
         {
             context.Add(interesse);
