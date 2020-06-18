@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CaoLendario.Models
 {
-    interface IInteresseRepositorio
+    public interface IInteresseRepositorio
     {
         IQueryable<Interesse> Interesse { get; }
 
